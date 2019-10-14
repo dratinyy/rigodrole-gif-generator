@@ -8,54 +8,33 @@ import imageio
 # 2. Ajoute des éléments tournoyants et la photo par dessus chaque frame
 # 3. Compile à nouveau le gif
 
-background_image_name   = "background/bg4.gif"
-frame_count_multiplier  = 1
+background_image_name   = "background/bg9.gif"
+frame_count_multiplier  = 24
 frame_duration          = 0.04
-photo_name              = "photo.png"
-item_names              = [ "items/star.png",
-                            "items/unicorn.png" ]
+photo_name              = "josh.png"
+item_names              = [ "items/brocoli.png",
+                            "items/chaussure.png",
+                            "items/singe.png",
+                            "items/mouette.png" ]
 
 item_data               = [ { "item_index": 0,
-                              "size": (80, 80),
-                              "position": (260, 200), 
+                              "size": (150, 150),
+                              "position": (30, 230), 
                               "initial_angle": 120,
                               "rotation_speed": 1,
-                              "rotation_direction": 1 },
-
-                              { "item_index": 0,
-                              "size": (80, 80),
-                              "position": (20, 50), 
-                              "initial_angle": 160,
-                              "rotation_speed": 1,
                               "rotation_direction": -1 },
-
                               { "item_index": 0,
-                              "size": (80, 80),
-                              "position": (90, 250), 
+                              "size": (150, 150),
+                              "position": (470, 200), 
                               "initial_angle": 240,
                               "rotation_speed": 1,
-                              "rotation_direction": -1 },
-
-                              { "item_index": 1,
-                              "size": (80, 80),
-                              "position": (120, 10), 
-                              "initial_angle": 30,
-                              "rotation_speed": 1,
                               "rotation_direction": 1 },
-
-                              { "item_index": 1,
-                              "size": (80, 80),
-                              "position": (280, 70), 
-                              "initial_angle": 120,
+                              { "item_index": 0,
+                              "size": (150, 150),
+                              "position": (340, 480), 
+                              "initial_angle": 0    ,
                               "rotation_speed": 1,
-                              "rotation_direction": -1 },
-
-                              { "item_index": 1,
-                              "size": (80, 80),
-                              "position": (5, 160), 
-                              "initial_angle": 210,
-                              "rotation_speed": 1,
-                              "rotation_direction": 1 } ]
+                              "rotation_direction": -1 } ]
 
 # Ouvre le gif de fond
 bg_image_reader = imageio.get_reader(background_image_name)
