@@ -8,8 +8,8 @@ import imageio
 # 2. Ajoute des éléments tournoyants et la photo par dessus chaque frame
 # 3. Compile à nouveau le gif
 
-background_image_name   = "background/bg9.gif"
-frame_count_multiplier  = 24
+background_image_name   = "background/bg10.gif"
+frame_count_multiplier  = 1
 frame_duration          = 0.04
 photo_name              = "josh.png"
 item_names              = [ "items/brocoli.png",
