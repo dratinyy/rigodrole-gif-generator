@@ -100,7 +100,6 @@ for i, frame in enumerate(bg_gif):
 
 # Les frames sont à nouveau compilée dans un gifs
 frames = [f for f in listdir(frame_directory) if isfile(join(frame_directory, f))]
-frames = frames + frames
 images = []
 for f in frames:
     frame = imageio.imread(frame_directory + f)
