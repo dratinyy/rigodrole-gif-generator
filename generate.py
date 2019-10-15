@@ -8,51 +8,53 @@ import imageio
 # 2. Ajoute des éléments tournoyants et la photo par dessus chaque frame
 # 3. Compile à nouveau le gif
 
-background_image_name   = "background/bg4.gif"
-frame_count_multiplier  = 1
+background_image_name   = "background/bg10.gif"
+frame_count_multiplier  = 3
 frame_duration          = 0.04
 photo_name              = "photo.png"
-item_names              = [ "items/star.png",
-                            "items/unicorn.png" ]
+item_names              = [ "items/smiley.png",
+                            "items/flocon.png",
+                            "items/peip.png",
+                            "items/hibou.png" ]
 
 item_data               = [ { "item_index": 0,
                               "size": (80, 80),
-                              "position": (260, 200), 
+                              "position": (260, 200),
                               "initial_angle": 120,
                               "rotation_speed": 1,
                               "rotation_direction": 1 },
 
                               { "item_index": 0,
                               "size": (80, 80),
-                              "position": (20, 50), 
+                              "position": (20, 50),
                               "initial_angle": 160,
                               "rotation_speed": 1,
                               "rotation_direction": -1 },
 
                               { "item_index": 0,
                               "size": (80, 80),
-                              "position": (90, 250), 
+                              "position": (90, 250),
                               "initial_angle": 240,
                               "rotation_speed": 1,
                               "rotation_direction": -1 },
 
                               { "item_index": 1,
                               "size": (80, 80),
-                              "position": (120, 10), 
+                              "position": (120, 10),
                               "initial_angle": 30,
                               "rotation_speed": 1,
                               "rotation_direction": 1 },
 
                               { "item_index": 1,
                               "size": (80, 80),
-                              "position": (280, 70), 
+                              "position": (280, 70),
                               "initial_angle": 120,
                               "rotation_speed": 1,
                               "rotation_direction": -1 },
 
                               { "item_index": 1,
                               "size": (80, 80),
-                              "position": (5, 160), 
+                              "position": (5, 160),
                               "initial_angle": 210,
                               "rotation_speed": 1,
                               "rotation_direction": 1 } ]
@@ -86,13 +88,13 @@ for i, frame in enumerate(bg_gif):
         # L'élément est ajuste à la bonne taille
         temp = items[item["item_index"]].resize(item["size"], Image.ANTIALIAS)
         # L'élément est tourné au besoin
-        temp = temp.rotate(item["initial_angle"] + 360 
-            * (i if item["rotation_direction"] == 1 else (len(bg_gif) - i)) 
+        temp = temp.rotate(item["initial_angle"] + 360
+            * (i if item["rotation_direction"] == 1 else (len(bg_gif) - i))
             * item["rotation_speed"]
             / len(bg_gif))
         # L'élément est collé
         frame.paste(temp, item["position"], temp)
-    
+
     # La photo est collée
     frame.paste(photo, (0, 0), photo)
     # La frame est enregistrée dans le dossier des frames
