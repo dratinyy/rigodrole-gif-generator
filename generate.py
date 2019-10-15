@@ -10,21 +10,22 @@ import imageio
 
 background_image_name   = "background/bg10.gif"
 frame_count_multiplier  = 3
-frame_duration          = 0.04
+frame_duration          = 0.1
 photo_name              = "photo.png"
 item_names              = [ "items/smiley.png",
                             "items/flocon.png",
                             "items/peip.png",
-                            "items/hibou.png" ]
+                            "items/hibou.png",
+                            "items/arcenciel.png" ]
 
-item_data               = [ { "item_index": 0,
+item_data               = [ { "item_index": 4,
                               "size": (80, 80),
                               "position": (260, 200),
                               "initial_angle": 120,
-                              "rotation_speed": 1,
+                              "rotation_speed": 0.7,
                               "rotation_direction": 1 },
 
-                              { "item_index": 0,
+                              { "item_index": 2,
                               "size": (80, 80),
                               "position": (20, 50),
                               "initial_angle": 160,
@@ -35,7 +36,7 @@ item_data               = [ { "item_index": 0,
                               "size": (80, 80),
                               "position": (90, 250),
                               "initial_angle": 240,
-                              "rotation_speed": 1,
+                              "rotation_speed": -0.4,
                               "rotation_direction": -1 },
 
                               { "item_index": 1,
@@ -45,14 +46,21 @@ item_data               = [ { "item_index": 0,
                               "rotation_speed": 1,
                               "rotation_direction": 1 },
 
-                              { "item_index": 1,
+                              { "item_index": 0,
                               "size": (80, 80),
                               "position": (280, 70),
                               "initial_angle": 120,
                               "rotation_speed": 1,
                               "rotation_direction": -1 },
 
-                              { "item_index": 1,
+                              { "item_index": 4,
+                              "size": (80, 80),
+                              "position": (480, 370),
+                              "initial_angle": 120,
+                              "rotation_speed": -1,
+                              "rotation_direction": -1 },
+
+                              { "item_index": 3,
                               "size": (80, 80),
                               "position": (5, 160),
                               "initial_angle": 210,
