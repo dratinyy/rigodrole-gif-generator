@@ -9,8 +9,8 @@ import imageio
 # 3. Compile à nouveau le gif
 
 background_image_name   = "background/bg9.gif"
-frame_count_multiplier  = 2
-frame_duration          = 0.05
+frame_count_multiplier  = 1
+frame_duration          = 0.1
 photo_name              = "photo.png"
 item_names              = [ "items/bombe.png",
                             "items/placard.png",
